@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
+using WagerWhaleApi.Domain.Repositories;
+using WagerWhaleApi.Infrastructure.Data.Competitions;
+using IApplicationDbContext = WagerWhaleApi.Infrastructure.Data.Common.IApplicationDbContext;
 
 namespace Microsoft.Extensions.DependencyInjection;
 
@@ -49,6 +52,12 @@ public static class DependencyInjection
         services.AddAuthorization(options =>
             options.AddPolicy(Policies.CanPurge, policy => policy.RequireRole(Roles.Administrator)));
 
+        return services;
+    }
+
+    public static IServiceCollection AddSqlRepositories(this IServiceCollection services)
+    {
+        services.AddTransient<ICompetitionRepository, CompetitionRepository>();
         return services;
     }
 }

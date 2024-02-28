@@ -1,6 +1,6 @@
 ﻿namespace WagerWhaleApi.Application.Common.Models;
 
-public class PaginatedList<T>
+/*public class PaginatedList<T>
 {
     public IReadOnlyCollection<T> Items { get; }
     public int PageNumber { get; }
@@ -26,4 +26,4 @@ public class PaginatedList<T>
 
         return new PaginatedList<T>(items, count, pageNumber, pageSize);
     }
-}
+}*/

@@ -7,6 +7,7 @@ using WagerWhaleApi.Application.TodoItems.Queries.GetTodoItemsWithPagination;
 using WagerWhaleApi.Application.TodoLists.Queries.GetTodos;
 using WagerWhaleApi.Domain.Entities;
 using NUnit.Framework;
+using WagerWhaleApi.Infrastructure.Data.Common;
 
 namespace WagerWhaleApi.Application.UnitTests.Common.Mappings;
 

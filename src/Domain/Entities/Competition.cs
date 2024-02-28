@@ -1,8 +1,6 @@
-﻿using WagerWhaleApi.Infrastructure.Data.Common;
+namespace WagerWhaleApi.Domain.Entities;
 
-namespace WagerWhaleApi.Infrastructure.Data.Competitions;
-
-public sealed class CompetitionEntity : BaseEntity
+public class Competition : BaseEntity
 {
     public string Name { get; set; } = default!;
     public decimal RewardPerStage { get; set; }
