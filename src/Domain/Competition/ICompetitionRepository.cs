@@ -1,6 +1,6 @@
 using OneOf;
 
-namespace WagerWhaleApi.Domain.Repositories;
+namespace WagerWhaleApi.Domain.Competition;
 
 public interface ICompetitionRepository
 {

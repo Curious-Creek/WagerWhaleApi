@@ -10,6 +10,7 @@ public sealed class CyclistParticipantTeamConfiguration : IEntityTypeConfigurati
     public void Configure(EntityTypeBuilder<CyclistParticipantTeamEntity> builder)
     {
         builder.ToTable("CyclistParticipantTeams");
+        builder.HasNoKey();
         
         builder.HasOne<CyclistEntity>()
             .WithMany()

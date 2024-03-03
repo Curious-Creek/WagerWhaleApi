@@ -1,7 +1,7 @@
-﻿using WagerWhaleApi.Domain.Common;
-using MediatR;
+﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
+using WagerWhaleApi.Infrastructure.Data.Common;
 
 namespace WagerWhaleApi.Infrastructure.Data.Interceptors;
 

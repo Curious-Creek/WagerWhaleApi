@@ -2,6 +2,7 @@ using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using OneOf;
 using WagerWhaleApi.Domain.Common;
+using WagerWhaleApi.Domain.Competition;
 using WagerWhaleApi.Domain.Entities;
 using WagerWhaleApi.Domain.Repositories;
 using WagerWhaleApi.Infrastructure.Data.Common;

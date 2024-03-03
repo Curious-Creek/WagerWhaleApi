@@ -10,8 +10,7 @@ public class StageResultConfiguration : IEntityTypeConfiguration<StageResultEnti
     public void Configure(EntityTypeBuilder<StageResultEntity> builder)
     {
         builder.ToTable("StageResults");
-        // Test generation. If the default behaviour is to create an Id column then add this line below to create primary key based on the CyclistId and StageId
-        //builder.HasKey(x => new { x.CyclistId, x.StageId });
+        builder.HasNoKey();
 
         builder.HasOne<CyclistEntity>()
             .WithMany()

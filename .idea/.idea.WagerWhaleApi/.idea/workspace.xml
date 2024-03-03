@@ -15,82 +15,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97fa068c-ee6c-43b9-88e5-b8f245dbdadb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Application/Competitions/Commands/CreateCompetition/CreateCompetition.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Competitions/Commands/CreateCompetition/CreateCompetitionValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Competitions/Queries/GetCompetitionById/GetCompetitionById.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Competitions/Queries/GetCompetitions/GetCompetitions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Cyclists/Queries/GetCyclistsWithPagination/GetCyclistsWithPagination.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blazor/Adapters/Competitions/CompetitionsAdapter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blazor/Adapters/Competitions/ICompetitionsAdapter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blazor/DependencyInjection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blazor/Domain/Competitions/Competition.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blazor/Domain/Competitions/CompetitionMapping.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blazor/Domain/Competitions/CompetitionViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blazor/Domain/Competitions/CreateCompetition.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blazor/Pages/Competition.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blazor/Pages/Competition.razor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Common/OneOfStructs.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Common/PaginatedList.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Entities/Competition.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Entities/Cyclist.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Queries/CyclistsQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Queries/PaginatedCyclistsQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Queries/PaginationQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Repositories/ICompetitionRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Repositories/ICyclistRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Data/Common/IApplicationDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Data/Common/PaginatedListExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Data/Common/QueryableExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Data/Competitions/CompetitionEntityMapping.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Data/Competitions/CompetitionRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Data/Cyclists/CyclistRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Data/Roles/RoleConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Data/Roles/RoleEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Competitions/EventHandlers/CompetitionCreatedEventHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/Competition/CompetitionCreatedEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Web/Endpoints/Competitions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WagerWhaleApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WagerWhaleApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Directory.Packages.props" beforeDir="false" afterPath="$PROJECT_DIR$/Directory.Packages.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TourPouleModel.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/TourPouleModel.mdj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Common/Interfaces/IApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Interfaces/IApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Common/Mappings/MappingExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Mappings/MappingExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Common/Models/PaginatedList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Models/PaginatedList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/Behaviours/PerformanceBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Behaviours/PerformanceBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/Mappings/MappingExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/Models/PaginatedList.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Competitions/Commands/CreateCompetition/CreateCompetition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Competitions/Commands/CreateCompetition/CreateCompetition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Competitions/Queries/GetCompetitionById/GetCompetitionById.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Competitions/Queries/GetCompetitionById/GetCompetitionById.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Competitions/Queries/GetCompetitions/GetCompetitions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Competitions/Queries/GetCompetitions/GetCompetitions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoItems/Commands/CreateTodoItem/CreateTodoItem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoItems/Commands/CreateTodoItem/CreateTodoItemCommandValidator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoItems/Commands/DeleteTodoItem/DeleteTodoItem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoItems/Commands/UpdateTodoItem/UpdateTodoItem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoItems/Commands/UpdateTodoItem/UpdateTodoItemCommandValidator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoItems/Commands/UpdateTodoItemDetail/UpdateTodoItemDetail.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoItems/EventHandlers/TodoItemCompletedEventHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoItems/EventHandlers/TodoItemCreatedEventHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoItems/Queries/GetTodoItemsWithPagination/GetTodoItemsWithPagination.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoItems/Queries/GetTodoItemsWithPagination/GetTodoItemsWithPaginationQueryValidator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoItems/Queries/GetTodoItemsWithPagination/TodoItemBriefDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Commands/CreateTodoList/CreateTodoList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Commands/CreateTodoList/CreateTodoListCommandValidator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Commands/DeleteTodoList/DeleteTodoList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Commands/PurgeTodoLists/PurgeTodoLists.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Commands/UpdateTodoList/UpdateTodoList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Commands/UpdateTodoList/UpdateTodoListCommandValidator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Queries/GetTodos/GetTodos.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Queries/GetTodos/TodoItemDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Queries/GetTodos/TodoListDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Queries/GetTodos/TodosVm.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/WeatherForecasts/Queries/GetWeatherForecasts/GetWeatherForecastsQuery.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/WeatherForecasts/Queries/GetWeatherForecasts/WeatherForecast.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blazor/Blazor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blazor/Blazor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blazor/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blazor/Layout/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blazor/Domain/Competitions/CompetitionMapping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blazor/Domain/Competitions/CompetitionMapping.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Blazor/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blazor/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Common/BaseEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Common/BaseEntity.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Domain/Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Data/ApplicationDbContextInitialiser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data/ApplicationDbContextInitialiser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Data/Competitions/CompetitionConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data/Competitions/CompetitionConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Data/Competitions/CompetitionEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data/Competitions/CompetitionEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Entities/Competition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Competition/Competition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Entities/Cyclist.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Cyclist/Cyclist.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Repositories/ICompetitionRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Competition/ICompetitionRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Repositories/ICyclistRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Cyclist/ICyclistRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Data/Common/BaseEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data/Common/BaseEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Data/Common/BaseEntityTypeConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data/Common/BaseEntityTypeConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Data/CompetitionStages/CompetitionStageConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data/CompetitionStages/CompetitionStageConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Data/Competitions/CompetitionEntityMapping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data/Competitions/CompetitionEntityMapping.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Data/Competitions/CompetitionRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data/Competitions/CompetitionRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Data/CyclistParticipantTeams/CyclistParticipantTeamConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data/CyclistParticipantTeams/CyclistParticipantTeamConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Data/Interceptors/DispatchDomainEventsInterceptor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data/Interceptors/DispatchDomainEventsInterceptor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Data/StageResults/StageResultConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data/StageResults/StageResultConfiguration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Web/Endpoints/TodoItems.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Web/Endpoints/TodoLists.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Web/Endpoints/WeatherForecasts.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Application.UnitTests/Common/Mappings/MappingTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.UnitTests/Common/Mappings/MappingTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Web/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Web/wwwroot/api/specification.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Web/wwwroot/api/specification.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,13 +51,22 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f6d9b9f660504e9db3c1d4a988080747c9908/f1/d3561c6c/IEndpointRouteBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/12f8d680aa1c5ae78dc1fb7cf8212be01e323372dbe3b9b87360e27c58936a/IRequest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/3f1acb59718cadf111a0a796681e3d3509bb3381/src/OpenApi/src/OpenApiEndpointConventionBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/efcore/a97f6ffcf78100056683c8c3b116721a89e5c58c/src/EFCore/Diagnostics/SaveChangesInterceptor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d9de85ef61604c57bb50b8cac968bd371a00/c5/d5bf90de/IRequest`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7415982338a3ccbd2a7a4eb483af627bda727e356b86bb32c5d4f6998f9c/IRequestHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/TestLib/Class1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b60386338a8235576eb5171c2bd3549113ab45319cda39ad1c281e85776ff6e/MediatrServiceConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/mabe21/RiderProjects/WagerWhaleApi/src/Application/DependencyInjection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/mabe21/RiderProjects/WagerWhaleApi/src/Infrastructure/Data/Common/BaseEntity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/mabe21/RiderProjects/WagerWhaleApi/src/Infrastructure/DependencyInjection.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -126,24 +88,24 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "wip",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode",
+    "settings.editor.selected.configurable": "Inspections-C++",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\MaxBe\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\MaxBe\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\MaxBe\\AppData\\Local\\Symbols\\src"
+      "C:\\Users\\mabe21\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\mabe21\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\mabe21\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.Blazor: https">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Web: WagerWhaleApi.Web">
     <configuration name="BlazorPwa: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/BlazorPwa/BlazorPwa.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -313,6 +275,10 @@
       <workItem from="1708890005969" duration="6358000" />
       <workItem from="1708977315027" duration="717000" />
       <workItem from="1709045575180" duration="8293000" />
+      <workItem from="1709215923827" duration="4964000" />
+      <workItem from="1709236995334" duration="1870000" />
+      <workItem from="1709276508136" duration="3851000" />
+      <workItem from="1709295290632" duration="8098000" />
     </task>
     <servers />
   </component>
@@ -320,6 +286,17 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Added blazor wasm project" />

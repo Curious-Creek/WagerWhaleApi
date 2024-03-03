@@ -1,4 +1,4 @@
-namespace WagerWhaleApi.Domain.Entities;
+namespace WagerWhaleApi.Domain.Competition;
 
 public class Competition : BaseEntity
 {

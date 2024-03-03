@@ -6,7 +6,7 @@ public class CompetitionMapping : Profile
 {
     public CompetitionMapping()
     {
-        CreateMap<WagerWhaleApi.Domain.Entities.Competition, Competition>();
+        CreateMap<WagerWhaleApi.Domain.Competition.Competition, Competition>();
         CreateMap<Competition, CompetitionViewModel>();
         CreateMap<CompetitionViewModel, Competition>();
     }

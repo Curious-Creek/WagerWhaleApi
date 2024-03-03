@@ -10,6 +10,7 @@ public sealed class CompetitionStageConfiguration : IEntityTypeConfiguration<Com
     public void Configure(EntityTypeBuilder<CompetitionStageEntity> builder)
     {
         builder.ToTable("CompetitionStages");
+        builder.HasNoKey();
 
         builder.HasOne<StageEntity>()
             .WithMany()

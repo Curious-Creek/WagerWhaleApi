@@ -2,6 +2,7 @@ using WagerWhaleApi.Domain.Common;
 using WagerWhaleApi.Domain.Entities;
 using WagerWhaleApi.Domain.Repositories;
 using OneOf;
+using WagerWhaleApi.Domain.Competition;
 
 namespace WagerWhaleApi.Application.Competitions.Commands.CreateCompetition;
 

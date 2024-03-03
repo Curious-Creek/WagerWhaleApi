@@ -7,8 +7,9 @@ public abstract class BaseEntityTypeConfiguration<T> : IEntityTypeConfiguration<
 {
     public virtual void Configure(EntityTypeBuilder<T> builder)
     {
-        builder.HasKey(c => c.Id);
-        builder.Property(c => c.Id).ValueGeneratedOnAdd();
+        builder.HasKey(x => x.Id);
+        builder.Property(x => x.Id).ValueGeneratedOnAdd();
         builder.HasAlternateKey(x => x.DomainId);
+        builder.Ignore(x => x.DomainEvents);
     }
 }

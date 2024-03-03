@@ -1,4 +1,5 @@
 using AutoMapper;
+using WagerWhaleApi.Domain.Competition;
 
 namespace WagerWhaleApi.Infrastructure.Data.Competitions;
 
@@ -6,7 +7,7 @@ public class CompetitionEntityMapping : Profile
 {
     public CompetitionEntityMapping()
     {
-        CreateMap<Domain.Entities.Competition, CompetitionEntity>();
-        CreateMap<CompetitionEntity, Domain.Entities.Competition>();
+        CreateMap<Competition, CompetitionEntity>();
+        CreateMap<CompetitionEntity, Competition>();
     }
 }
