@@ -1,14 +1,16 @@
+using Microsoft.AspNetCore.Identity;
 using WagerWhaleApi.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-builder.Services.AddKeyVaultIfConfigured(builder.Configuration);
 
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration)
     .AddSqlRepositories();
 builder.Services.AddWebServices();
+
+builder.Services
+    .AddAuthentication()
+    .AddBearerToken(IdentityConstants.BearerScheme);
 
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));
 
